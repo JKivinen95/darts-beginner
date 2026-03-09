@@ -1,0 +1,142 @@
+/* YLEISET ASETUKSET */
+
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+color: white;
+
+/* Darts-taulu taustalle */
+background-image: url("../images/dartboard.png");
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+
+/* Tumma kerros jotta teksti näkyy paremmin */
+
+body::before {
+content: "";
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.75);
+z-index: -1;
+}
+
+
+/* HEADER */
+
+header {
+background-color: #c00000;
+padding: 20px;
+text-align: center;
+}
+
+/* NAVIGAATIO */
+
+nav ul {
+list-style: none;
+padding: 0;
+margin: 10px 0;
+}
+
+nav li {
+display: inline-block;
+margin: 0 15px;
+}
+
+nav a {
+color: #00b050;
+text-decoration: none;
+font-weight: bold;
+font-size: 18px;
+}
+
+nav a:hover {
+color: #7CFC00;
+}
+
+
+/* PÄÄSISÄLTÖ */
+
+main {
+max-width: 1000px;
+margin: auto;
+padding: 30px;
+background-color: rgba(0,0,0,0.7);
+border-radius: 10px;
+}
+
+
+/* OTSIKOT */
+
+h1 {
+color: white;
+}
+
+h2, h3 {
+color: #00b050;
+}
+
+
+/* KUVAT */
+
+img {
+max-width: 100%;
+height: auto;
+border-radius: 10px;
+margin-top: 15px;
+}
+
+
+/* TAULUKKO */
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+font-size: 15px;
+}
+
+th, td {
+border: 1px solid white;
+padding: 10px;
+text-align: center;
+}
+
+th {
+background-color: #c00000;
+}
+
+tr:hover {
+background-color: #003300;
+}
+
+
+/* FOOTER */
+
+footer {
+text-align: center;
+padding: 20px;
+background-color: rgba(0,0,0,0.8);
+margin-top: 40px;
+}
+
+
+/* RESPONSIIVINEN */
+
+@media (max-width: 700px) {
+
+nav li {
+display: block;
+margin: 10px 0;
+}
+
+main {
+margin: 10px;
+padding: 20px;
+}
+
+}
